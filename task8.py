@@ -1,13 +1,7 @@
 __author__ = 'Куркин Иван'
 
-a = int(input('Введите год: '))
-
-if a % 4 != 0:
-    print('Обычный год')
-elif a % 100 == 0:
-    if a % 400 == 0:
-        print('Это високосный год')
-    else:
-        print('Это обычный год')
-else:
-    print('Это високосный год')
+a = input("Введите число: ")
+dig = input("Введите цифру: ")
+count = 0
+count = sum([count+1 for x in a if int(dig) == int(x)])
+print(count)
